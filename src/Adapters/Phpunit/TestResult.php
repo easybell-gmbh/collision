@@ -205,6 +205,8 @@ final class TestResult
             return $test->className()::getLatestPrintableTestCaseMethodName();
         }
 
+        return $test->name();
+/*
         $name = $test->name();
 
         // First, lets replace underscore by spaces.
@@ -223,6 +225,7 @@ final class TestResult
         $name = mb_strtolower($name);
 
         return $name;
+        */
     }
 
     /**
